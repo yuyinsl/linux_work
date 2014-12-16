@@ -1,0 +1,11 @@
+sql: RazorSQL, mysql-workbench
+dev: intellij IDEA
+project manager: git
+capture package: wireshark
+
+
+browser： firefox, chrome
+email: thunder-bird
+contact: skype
+remote control: TeamViewer
+

@@ -1,0 +1,10 @@
+git remeber:
+	git clone http://git.movoto.com/git/movoto/Pipeline
+	git checkout --track origin/develop
+	git config credential.helper store
+	vi .gitmodules
+	git submodule init
+	git submodule update
+	cd src/mapping_config
+	git checkout --track origin/develop
+	git config credential.helper store

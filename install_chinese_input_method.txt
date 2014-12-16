@@ -1,0 +1,34 @@
+Ubuntu 12.04中文输入法的安装
+ 
+Ubuntu上的输入法主要有小小输入平台（支持拼音/二笔/五笔等），Fcitx，Ibus，Scim等。其中Scim和Ibus是输入法框架。
+在Ubuntu的中文系统中自带了中文输入法，通过Ctrl+Space可切换中英文输入法。这里我们主要说下Ubuntu英文系统中，中文输入法的安装。
+安装输入法
+第一步，是安装语言包。我们选择System Settings-->Language Support-->Install/Remove Languages
+输入密码后，系统会安装简体中文语言包。
+
+第二步，安装IBus框架，在终端输入以下命令：
+sudo apt-get install ibus ibus-clutter ibus-gtk ibus-gtk3 ibus-qt4
+启动IBus框架，在终端输入：
+im-switch -s ibus
+安装完IBus框架后注销系统，保证更改立即生效。
+
+第三步：安装拼音引擎
+有下面几种常用选择：
+IBus拼音：sudo apt-get install ibus-pinyin
+IBUS五笔：sudo apt-get install ibus-table-wubi
+谷歌拼音输入法：sudo apt-get install ibus-googlepinyin
+Sun拼音输入法：sudo apt-get install ibus-sunpinyin
+
+第四步：设置IBus框架  www.2cto.com  
+ibus-setup
+此时，IBus Preference设置被打开。我们在Input Method选项卡中，选择自己喜欢的输入方式，并配置自己喜欢的快捷键即可。
+
+第五步：通常情况下，IBus图标（一个小键盘）会出现在桌面右上角的任务栏中。有时候这个图标会自行消失，可使用以下命令，找回消失的IBus图标：
+ibus-daemon -drx
+
+
+
+links:
+http://www.2cto.com/os/201207/144189.html
+http://pinyinjoe.com/linux/ubuntu-12-chinese-setup.htm
+ 

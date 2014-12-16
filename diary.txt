@@ -1,0 +1,369 @@
+Thursday, January 10, 2013
+
+fix the error when execute:
+sudo apt-get update
+The following signatures were invalid: BADSIG:
+sudo apt-get clean 
+cd /var/lib/apt 
+sudo mv lists lists.old 
+sudo mkdir -p lists/partial 
+sudo apt-get clean 
+sudo apt-get update
+
+
+Friday, January 16, 2013
+uninstall the software
+
+sudo apt-get purge NameOfSoftware
+sudo apt-get autoremove
+sudo apt-get clean
+
+Wednesday, January 23, 2013
+https://www.pivotaltracker.com/story/show/41795843
+
+Rich Snippets Tool	
+http://www.google.com/webmasters/tools/richsnippets
+
+
+Tuesday, January 29, 2013
+cow;administrator;movotoit@2011
+10.0.125.204,administrator,movoto$123
+
+Tuesday, January 30, 2013
+run microsites:
+config output dir
+config db
+link config
+run.sh buygeorgiahouses
+
+查询表索引:
+exec sp_helpindex 'igen_house_info';
+
+Monday, April 8, 2013
+https://github.com/sunspot/sunspot/wiki/Configure-Solr-on-Ubuntu,-the-quickest-way Ying @ 16:56
+how to config SOLR
+dpp:
+9 section; 5 section
+
+Tuesday, April 9, 2013
+
+在那个search.php里面 14:05
+$solr = new Apache_Solr_service('localhost', '8983', '/solr/house/');
+house改成你的那几个名字（ca，ma，nc什么的），比如：
+$solr = new Apache_Solr_service('localhost', '8983', '/solr/ca/');
+另外 把各个site的house.db  放到/solr/solr/databse/相应的名字/  里面就行了
+
+Wednesday, April 10, 2013
+1. When a large amount of data is deleted, must run the VACUUM command in sqlite. 
+
+Monday, April 15, 2013
+ga: 
+(34.045809,-84.732930);
+
+Tuesday, April 16, 2013
+scorpion: username: ksun pw: kennysun
+
+Wednesday, April 17, 2013
+find finename path
+locate filename
+
+Thusday, April 18, 2013
+smb://scorpion/mlsimages_500g
+user:IGENHOME\image-downloader
+pwd:reeksCEEbingE98
+
+Niagara  Falls  /naɪ'æɡrə/
+（北美）尼亚加拉大瀑布
+
+Monday, April 22, 2013
+http://dev.movoto.com:8080/
+http://rebirth.movostage.com/igen_rebirth/
+322, 411, 412, 413, 414, 521: not display the statement under the house feature form.
+open house 列
+[open_house_date1] [datetime] NULL,
+[open_house_date2] [datetime] NULL,
+[open_house_timerange1] [varchar](25) NULL,
+[open_house_timerange2] [varchar](25) NULL,	
+
+Wednesday, April 24, 2013
+netstat -lnp | grep 3000
+ps -aux | grep node
+kill -signal(1,2,9,15,17) pid
+
+node.js module install: npm install formidable
+
+Thusday, April 25, 2013
+break linenum
+break if
+info break
+
+Friday, April 26, 2013
+sudo npm install -g supervisor
+eclipse-node.js:
+http://chromedevtools.googlecode.com/svn/update/dev/
+
+Friday, May 3, 2013
+exit telnet localhost 25:
+ctrl+], then press q
+
+
+Tuesday, May 14, 2013
+sudo dpkg -i package_name.deb
+二、Ubuntu中软件包的卸载方法
+1、APT方式
+（1）移除式卸载：apt-get remove softname1 softname2 …;（移除软件包，当包尾部有+时，意为安装）
+（2）清除式卸载 ：apt-get --purge remove softname1 softname2...;(同时清除配置)
+2、Dpkg方式
+（1）移除式卸载：dpkg -r pkg1 pkg2 ...;
+（2）清除式卸载：dpkg -P pkg1 pkg2...; 
+
+Wednesday, May 15, 2013
+npm install date-format-lite
+查询版本:
+aptitude show software
+dpkg -L sorfware
+whereis software
+
+Friday, May 24, 2013
+falcon: 10.0.125.213
+cow: 10.0.125.204
+
+
+Saturday, June 8, 2013
+
+SOA log path : 
+	/home/lluo/develop/apache-tomcat-6.0.36/webapps/property/WEB-INF/logs
+
+Sunday, June 9, 2013	
+Microsites run:
+	/home/kenny/Mydev/microsites/system/release/bin/run.sh
+
+Wednesday, June 19, 2013
+联通：网关 10.0.125.2   DNS 10.0.125.2    210.22.84.3
+电信：网关 10.0.125.1   DNS 10.0.125.1    202.96.209.133
+sudo /etc/init.d/networking restart
+浏览器快捷键：
+Ctrl+Shift+T  重新打开上次关闭的标签页。
+Ctrl+W 	关闭当前标签页或弹出式窗口
+Ctrl+L 	突出显示网址区域中的内容
+输入网址，然后按 Alt+Enter	在新标签页中打开网址
+Ctrl+J	查看下载页
+
+Thusday, June 20, 2013
+set system proxy from command line:
+	vi /etc/environment   add
+	http_proxy="http://10.0.125.200:808/"
+	https_proxy="https://10.0.125.200:808/"
+	ftp_proxy="ftp://10.0.125.200:808/"
+	socks_proxy="socks://10.0.125.200:808/"
+
+
+Friday, June 21, 2013
+sudo vi /etc/network/interfaces
+
+
+use NetworkManager
+sudo vi /etc/NetworkManager/NetworkManager.conf
+[ifupdown]
+managed=true
+
+sudo service network-manager restart
+
+edit resolv.conf:
+sudo vi /etc/resolvconf/resolv.conf.d/base
+
+
+Wednesday, June 26, 2013
+apache2:
+	a2ensite a2dissite
+	service apache2 reload
+	sudo /etc/init.d/apache2 stop
+	sudo /etc/init.d/apache2 start
+	sudo /etc/init.d/apache2 restart
+
+Wednesday, July 17, 2013
+when "sudo install ***" return this error:
+	"The following packages have unmet dependencies:"
+	try "sudo aptitude install ***" instead
+
+initnode.sh
+can't understand:
+76~80 : replace anchor texts
+
+sudo npm install -g grunt-cli
+npm install grunt --save-dev
+http://gruntjs.com/getting-started
+
+Friday, July 19, 2013
+git clone  http://username:@git.igenhome.local/git/soa/service/sso
+git checkout --track origin/develop
+
+Wednesday, July 24, 2013
+
+Run background:
+ nohup `node app.js` &
+
+Friday, August 2, 2013
+
+path.normalize(p);
+setTimeout(callback, delay, [arg], [...]);
+clearTimeout(timeoutId);
+setInterval(callback, delay, [arg], [...]);
+clearInterval(intervalId);
+
+压力测试:
+webbench -c 1000 -t 60 request;
+
+
+node module: hashish
+
+
+Monday, August 19, 2013
+git save password
+git config credential.helper store
+
+http://blog.eood.cn/nodejs_dev
+
+Tuesday, August 27, 2013
+install npm:
+curl http://npmjs.org/install.sh | sudo sh
+or
+wget curl http://npmjs.org/install.sh
+sh install.sh
+or
+sudo apt-get install npm
+uninstall npm:
+curl http://npmjs.org/install.sh | clear=yes sh
+or
+sudo npm uninstall npm -g
+
+install/uninstall node:
+./configure
+make
+sudo make install/uninstall
+
+Wednesday, August 28, 2013
+find . -name '*.js' -exec grep -li movoto {} \;
+
+Wednesday, September 3, 2013
+node dependency:
+	assert: util
+	buffer: util
+	child_process: events, assert, util, net, dgram, string_decoder
+	cluster: events, assert, util, child_process, net, dgram
+	console: util
+	domain: util, events
+	events: util, (domain)
+	fs: util, path, events, stream
+	http: util, events, _http_incoming, _http_common, _http_outgoing, _http_server, _http_agent, _http_client
+	https: tls, http, util
+	module: util, native_module, vm, assert
+	net: events, stream, timers, util, assert
+	os: util
+	path: util
+	querystring: util
+	readline: util, events
+	stream: util, events, _stream_readable, _stream_writable, _stream_duplex, _stream_transform, _stream_passthrough
+	timers: _linklist, assert, util
+	util:
+	
+	private:
+	_http_agent: net, url, util, events, _http_client
+	_http_client: util, net, events, assert, _http_common, _http_incoming, _http_outgoing, _http_agent
+	_http_common: freelist, http_parser, _http_incoming, util
+	_http_incoming: util, stream
+	_http_outgoing: assert, stream, timers, util, _http_common
+	_http_server: util, net, events, assert, _http_common, _http_outgoing
+
+
+Monday, 9 September
+	hasOwnProperty && in
+	var test = { a: 5 };
+	test.hasOwnProperty('a'); //true
+	test.hasOwnProperty('toString'); //false
+	'a' in test; //true
+	'toString' in test; //true
+
+    loop optimization:
+		for(var i=items.length; i--)process(items[i]);
+		Duff's Device(var iterations = Math.floor(items.length/8)
+		use forEach as less as possible
+	
+Tuesday, 24 September
+
+Pipeline:
+	sudo easy_install phonenumbers thrift happybase stompest
+	
+Wednesday, 23 July
+	mysql -hnormdb.internal.ng.movoto.net -Dmls_normalized -umovoto -pmovoto123!
+	mysql -hdb1-mls-raw.internal.ng.movoto.net -Dmls -umls -pmls123!
+	mysql -hdb2-mls-raw.internal.ng.movoto.net -Dmls -umls -pmls123!
+
+Friday, 29 August
+	use grep commond find the process ids and kill them:
+		ps aux|grep GetAwe|awk '{print $2}'|xargs kill -9
+
+Thursday, 11 September
+	git commit
+	git pull --rebase
+	warining: abort
+	merge
+	git add
+	1. git commit (error)
+	2. git rabase --continue(right)
+
+Wednesday, 22 October
+	Git Howto: Revert a Commit Already Pushed to a Remote Repository
+		git reset --hard <version_id>  # reset the code to version_id 
+		git push -f
+	link: http://christoph.ruegg.name/blog/git-howto-revert-a-commit-already-pushed-to-a-remote-reposit.html
+
+Saturday, 8 November
+feature mapping:
+	property_attrs_mapping_tool  read metadata, update movoto.feature
+	collector read normalize table, update movoto.feature
+	Feature mapping tool  read feature, feature_category_id, feature_rule tables from movoto database.  update feature_group,feature_rule,feature tables
+Post converter:
+	poster converter will insert new attribute to movoto.attribute when it found a new attribute
+
+
+Friday, 11 November
+curl usage:
+curl -i -H "X-MData-Key: key" "http://service.ng.movoto.net/geoarea/refresh"
+
+Monday, 17 November
+virtual environment:
+	pip install virtualenv
+	virtualenv venv
+	source venv/bin/activate
+	deactivate
+mv virtual environment:
+	move directory
+	vi venv/bin/activate
+
+Tuesday, 9 December
+git common command:
+clone: git clone <git-url>;  git checkout --track origin/develop
+create: mkdir; git init; git checkout develop; git remote add origin <git-url>; git push -u origin master; git push -u origin develop
+
+
+
+
+
+12. Incorrect "sold_date"
+	Reason: Can't find mls column to map movoto column.
+15. Incorrect Status
+	Reason: Download date isn't latest.
+20. "parking_other" incorrect
+	Reason: Missing column mapping.
+21. "fee1_value": "None" is incorrect
+	Reason: It's old column's mapping error, I did't find out.
+22. Half/Full/Total Bathroom data is incorrect
+	Reason: a. Special handler function bug, which will return none when input is decimals.
+			b. Just find total bathrooms but half baths and full baths from mls information.
+431, 433,
+12 100 101 110 202  210 411 412  482 483 486 491  571 573  721  741 
+
+
+621 811 812 831 841 862
+

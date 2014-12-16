@@ -1,0 +1,15 @@
+git: apt-get install git-core
+easy_install: apt-get install python-setuptools
+MySQLdb: sudo apt-get install python-mysqldb 
+SQL: cd SoftwareDownload && easy_install
+sendmail: apt-get install sendmail
+skype: using vpn download
+wireshark: http://netsecurity.51cto.com/art/200906/131979.htm
+intellij idea: smb://apple/share/individual/Steven
+
+celery: sudo easy_install celery
+rabbit: sudo apt-get install rabbitmq-server
+
+SQLAlchemy: sudo easy_install SQLAlchemy
+
+
