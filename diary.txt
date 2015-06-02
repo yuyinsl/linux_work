@@ -36,7 +36,7 @@ config db
 link config
 run.sh buygeorgiahouses
 
-��ѯ������:
+²éÑ¯±íË÷Òý:
 exec sp_helpindex 'igen_house_info';
 
 Monday, April 8, 2013
@@ -47,11 +47,11 @@ dpp:
 
 Tuesday, April 9, 2013
 
-���Ǹ�search.php���� 14:05
+ÔÚÄÇžösearch.phpÀïÃæ 14:05
 $solr = new Apache_Solr_service('localhost', '8983', '/solr/house/');
-house�ĳ�����Ǽ������֣�ca��ma��ncʲô�ģ������磺
+housežÄ³ÉÄãµÄÄÇŒžžöÃû×Ö£šca£¬ma£¬ncÊ²ÃŽµÄ£©£¬±ÈÈç£º
 $solr = new Apache_Solr_service('localhost', '8983', '/solr/ca/');
-���� �Ѹ���site��house.db  �ŵ�/solr/solr/databse/��Ӧ������/  ���������
+ÁíÍâ °Ñž÷žösiteµÄhouse.db  ·Åµœ/solr/solr/databse/ÏàÓŠµÄÃû×Ö/  ÀïÃæŸÍÐÐÁË
 
 Wednesday, April 10, 2013
 1. When a large amount of data is deleted, must run the VACUUM command in sqlite. 
@@ -72,14 +72,14 @@ smb://scorpion/mlsimages_500g
 user:IGENHOME\image-downloader
 pwd:reeksCEEbingE98
 
-Niagara  Falls  /na�0�1'�0�3��r�0�5/
-�����������Ǽ������ٲ�
+Niagara  Falls  /na0®1'03šÀr0¬5/
+£š±±ÃÀ£©ÄáÑÇŒÓÀ­ŽóÆÙ²Œ
 
 Monday, April 22, 2013
 http://dev.movoto.com:8080/
 http://rebirth.movostage.com/igen_rebirth/
 322, 411, 412, 413, 414, 521: not display the statement under the house feature form.
-open house ��
+open house ÁÐ
 [open_house_date1] [datetime] NULL,
 [open_house_date2] [datetime] NULL,
 [open_house_timerange1] [varchar](25) NULL,
@@ -109,17 +109,17 @@ ctrl+], then press q
 
 Tuesday, May 14, 2013
 sudo dpkg -i package_name.deb
-����Ubuntu����������ж�ط���
-1��APT��ʽ
-��1���Ƴ�ʽж�أ�apt-get remove softname1 softname2 ��;���Ƴ�������������β����+ʱ����Ϊ��װ��
-��2�����ʽж�� ��apt-get --purge remove softname1 softname2...;(ͬʱ�������)
-2��Dpkg��ʽ
-��1���Ƴ�ʽж�أ�dpkg -r pkg1 pkg2 ...;
-��2�����ʽж�أ�dpkg -P pkg1 pkg2...; 
+¶þ¡¢UbuntuÖÐÈíŒþ°üµÄÐ¶ÔØ·œ·š
+1¡¢APT·œÊœ
+£š1£©ÒÆ³ýÊœÐ¶ÔØ£ºapt-get remove softname1 softname2 ¡­;£šÒÆ³ýÈíŒþ°ü£¬µ±°üÎ²²¿ÓÐ+Ê±£¬ÒâÎª°²×°£©
+£š2£©Çå³ýÊœÐ¶ÔØ £ºapt-get --purge remove softname1 softname2...;(Í¬Ê±Çå³ýÅäÖÃ)
+2¡¢Dpkg·œÊœ
+£š1£©ÒÆ³ýÊœÐ¶ÔØ£ºdpkg -r pkg1 pkg2 ...;
+£š2£©Çå³ýÊœÐ¶ÔØ£ºdpkg -P pkg1 pkg2...; 
 
 Wednesday, May 15, 2013
 npm install date-format-lite
-��ѯ�汾:
+²éÑ¯°æ±Ÿ:
 aptitude show software
 dpkg -L sorfware
 whereis software
@@ -139,15 +139,15 @@ Microsites run:
 	/home/kenny/Mydev/microsites/system/release/bin/run.sh
 
 Wednesday, June 19, 2013
-��ͨ������ 10.0.125.2   DNS 10.0.125.2    210.22.84.3
-���ţ����� 10.0.125.1   DNS 10.0.125.1    202.96.209.133
+ÁªÍš£ºÍø¹Ø 10.0.125.2   DNS 10.0.125.2    210.22.84.3
+µçÐÅ£ºÍø¹Ø 10.0.125.1   DNS 10.0.125.1    202.96.209.133
 sudo /etc/init.d/networking restart
-�������ݼ���
-Ctrl+Shift+T  ���´��ϴιرյı�ǩҳ��
-Ctrl+W 	�رյ�ǰ��ǩҳ�򵯳�ʽ����
-Ctrl+L 	ͻ����ʾ��ַ�����е�����
-������ַ��Ȼ�� Alt+Enter	���±�ǩҳ�д���ַ
-Ctrl+J	�鿴����ҳ
+ä¯ÀÀÆ÷¿ìœÝŒü£º
+Ctrl+Shift+T  ÖØÐÂŽò¿ªÉÏŽÎ¹Ø±ÕµÄ±êÇ©Ò³¡£
+Ctrl+W 	¹Ø±Õµ±Ç°±êÇ©Ò³»òµ¯³öÊœŽ°¿Ú
+Ctrl+L 	Í»³öÏÔÊŸÍøÖ·ÇøÓòÖÐµÄÄÚÈÝ
+ÊäÈëÍøÖ·£¬È»ºó°Ž Alt+Enter	ÔÚÐÂ±êÇ©Ò³ÖÐŽò¿ªÍøÖ·
+Ctrl+J	²é¿ŽÏÂÔØÒ³
 
 Thusday, June 20, 2013
 set system proxy from command line:
@@ -211,7 +211,7 @@ clearTimeout(timeoutId);
 setInterval(callback, delay, [arg], [...]);
 clearInterval(intervalId);
 
-ѹ������:
+Ñ¹ÁŠ²âÊÔ:
 webbench -c 1000 -t 60 request;
 
 
@@ -346,7 +346,15 @@ git common command:
 clone: git clone <git-url>;  git checkout --track origin/develop
 create: mkdir; git init; git checkout develop; git remote add origin <git-url>; git push -u origin master; git push -u origin develop
 
-
+Tuesday, 2 June
+（1）sudo apt-get autoclean
+（2）sudo apt-get clean
+（3）sudo apt-get update
+（4）sudo apt-get upgrade
+（5）sudo apt-get dist-upgrade
+（6）apt-get --help && sudo apt-get -f install
+（7）sudo dpkg –configure -a
+（8）sudo apt-get install openjdk-7-jre-headless
 
 
 
